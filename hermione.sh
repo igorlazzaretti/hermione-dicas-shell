@@ -67,13 +67,12 @@ while true; do
             perguntar_continuar
             ;;
         0)
+            echo "Saindo..."
             echo "Lembre-se: é leviÔsa e não leviosÁ..."
             exit 0
             ;;
         *)
             echo "Algo deu errado, Harry! Espero que não sejamos mortos, ou pior, expulsos."
-            echo "Ainda precisa de ajuda? Talvez algumas horas na biblioteca resolvam..."
-            perguntar_continuar
             ;;
     esac
     echo "" # Linha em branco para melhor legibilidade

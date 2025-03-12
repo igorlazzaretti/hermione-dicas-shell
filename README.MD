@@ -1,11 +1,11 @@
 ### Como instalar Hermione
 
-    Mova o arquivo dev-dicas.sh para o caminho indicado
+Mova o arquivo dev-dicas.sh para o caminho indicado
 
-<code> $ sudo mv hermione.sh /usr/local/bin/hermione </code>
+    sudo mv hermione.sh /usr/local/bin/hermione
 
-    Dê permissão para o script
+Dê permissão para o script
 
-<code> $ sudo chmod +x /usr/local/bin/hermione </code>
+    sudo chmod +x /usr/local/bin/hermione
 
-    Lembre-se: Só porque está na sua cabeça não significa que não seja real.
+Lembre-se: Só porque está na sua cabeça não significa que não seja real.
