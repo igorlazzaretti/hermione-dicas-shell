@@ -1,12 +1,17 @@
 ### Como instalar Hermione
 
-Mova o arquivo dev-dicas.sh para o caminho indicado
+Mova o arquivo hermione.sh para o caminho indicado
 
     sudo mv hermione.sh /usr/local/bin/hermione
 
 Dê permissão para o script
 
     sudo chmod +x /usr/local/bin/hermione
+
+Pronto. Basta digitar hermione na sua linha de comando
+
+    hermione
+
 
 ### Como atualizar Hermione
 
@@ -32,6 +37,11 @@ Quer atualizar com vim? Tem certeza? Tudo bem então...
     Digite :wq e aperte Enter.
 
 
+### Autor
+
+Meu nome é Igor Dossin Lazzaretti. Caso queria me conhecer mais não deixe de acessar meu site: [igorlazzaretti.com](https://igorlazzaretti.com)
+
+
 >  "Empolgante, não é? Quebrar regras." — Hermione Granger em Harry Potter e o Prisioneiro de Azkaban (2004)
 
 
@@ -39,12 +49,4 @@ Quer atualizar com vim? Tem certeza? Tudo bem então...
 <!--
     Commit
 :scroll: Hermione: Dicas em shellscript
-
-    Caso prefira, pode apenas alterar o conetudo do arquivo .sh
-        Navegue: cd /usr/local/bin/hermione
-        Digite:  subl hermione
-    Cole o textot previamente copiado. Salve o arquivo e pronto.
-    Ou use o temido vim O.O
-        Digite:  vim hermione
-        Digite:
  -->

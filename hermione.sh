@@ -10,7 +10,7 @@ while true; do
     echo "4 - Dicas Podman"
     echo "5 - Dicas Postgres"
     echo "6 - Dicas SQL"
-    echo "7 - Atualizar meu sistema"
+    echo "7 - Atualizar meu sistema operacional"
     echo "0 - Sair"
 
     # Solicitar a entrada do usuário
@@ -78,11 +78,10 @@ while true; do
             perguntar_continuar
             ;;
         7)
-            echo "Vamos atualizar o seu Sistema Operacional Fedora."
-            echo ""
+            echo "Vamos atualizar o seu Sistema Operacional."
             echo "Executando o comando 'sudo dnf upgrade --refresh'..."
             sudo dnf upgrade --refresh -y
-
+            echo ""
             echo "Atualização finalizada com sucesso!"
             echo "Ainda precisa de ajuda? Talvez algumas horas na biblioteca resolvam..."
             perguntar_continuar
