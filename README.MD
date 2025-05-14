@@ -24,7 +24,7 @@ Quer apenas atualizar o arquivo com Sublime Text?
 Quer atualizar com vim? Tem certeza? Tudo bem então...
 
     Navegue: cd /usr/local/bin/hermione
-    Digite:  subl hermione
+    Digite:  vim hermione
     Pressione G para ir até o final do arquivo.
     Digite ggdG e aperte Enter (isso apaga tudo).
 

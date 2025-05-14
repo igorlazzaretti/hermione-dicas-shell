@@ -10,7 +10,7 @@ while true; do
     echo "4 - Dicas Podman"
     echo "5 - Dicas Postgres"
     echo "6 - Dicas SQL"
-    echo "7 - Atualizar meu sistema operacional"
+    echo "7 - Livro de Funções para o Fedora"
     echo "0 - Sair"
 
     # Solicitar a entrada do usuário
@@ -29,7 +29,7 @@ while true; do
                     exit 0 # Encerra o programa
                     ;;
                 *)
-                    echo "Por favor, escolha 's' para sim ou 'n' para não."
+                    echo "Isso é bastante simples, não acha? Por favor, escolha 's' para sim ou 'n' para não.";
                     ;;
             esac
         done
@@ -38,6 +38,7 @@ while true; do
     # Processar a escolha do usuário
     case $opcao in
         1)
+            echo "~*"        
             echo "Estas dicas serão uteis para navegar no mundo Linux."
             echo ""
             echo "[comando] --help --- Ajuda. Lista as opções do comando pretendido"
@@ -52,41 +53,77 @@ while true; do
             ;;
         2)
         # echo "2 - Dica Git"
+            echo "~*"        
             echo "Dica Git: Use 'git log --oneline --graph' para visualizar o histórico de commits."
             echo "Ainda precisa de ajuda? Talvez algumas horas na biblioteca resolvam..."
             perguntar_continuar
             ;;
         3)
         # echo "3 - Dica Alias"
+            echo "~*"        
             echo "Dica Alias: Use 'alias ll=\"ls -lah\"' para criar um atalho para listar arquivos."
             echo "Ainda precisa de ajuda? Talvez algumas horas na biblioteca resolvam..."
             perguntar_continuar
             ;;
         4)
+        # echo "4 - Dica Podman"
+            echo "~*"
             echo "Dica Podman: Use 'podman ps -a' para listar todos os contêineres, incluindo os parados."
             echo "Ainda precisa de ajuda? Talvez algumas horas na biblioteca resolvam..."
             perguntar_continuar
             ;;
         5)
+        # echo "5 - Dica Postgres"
+            echo "~*"
             echo "Dica Postgres: Use 'psql -U usuario -d banco' para acessar o banco de dados pelo terminal."
             echo "Ainda precisa de ajuda? Talvez algumas horas na biblioteca resolvam..."
             perguntar_continuar
             ;;
         6)
+        # echo "6 - Dica SQL"
+            echo "~*"
             echo "Dica SQL: Use 'SELECT * FROM tabela LIMIT 10;' para visualizar os primeiros 10 registros."
             echo "Ainda precisa de ajuda? Talvez algumas horas na biblioteca resolvam..."
             perguntar_continuar
             ;;
         7)
-            echo "Vamos atualizar o seu Sistema Operacional."
-            echo "Executando o comando 'sudo dnf upgrade --refresh'..."
-            sudo dnf upgrade --refresh -y
-            echo ""
-            echo "Atualização finalizada com sucesso!"
+            echo "~*"
+            echo "Você acessou o 7: Livro de Funções para o Fedora:"
+            echo "1 - Accio Upgrade (Atualizar o sistema)"
+            echo "2 - Estupefaça (Reiniciar o sistema)"
+            echo "3 - Avada Kedavra (Desligar o sistema)"
+            echo "0 - Voltar ao menu principal"
+            read -p "Escolha sua magia (0-3): " magia
+            case $magia in
+                1)
+                    echo "Você lançou: Accio Upgrade!"
+                    echo "Executando o comando 'sudo dnf upgrade --refresh'..."
+                    sudo dnf upgrade --refresh -y
+                    echo ""
+                    echo "Atualização finalizada com sucesso!"
+                    ;;
+                2)
+                    echo "Você lançou: Estupefaça!"
+                    echo "Reiniciando o sistema com 'shutdown -r now'..."
+                    sudo shutdown -r now
+                    ;;
+                3)
+                    echo "Você lançou: Avada Kedavra!"
+                    echo "Desligando o sistema com 'shutdown -h now'..."
+                    sudo shutdown -h now
+                    ;;
+                0)
+                    echo "Voltando ao menu principal..."
+                    ;;
+                *)
+                    echo "Magia desconhecida! Tente novamente."
+                    ;;
+            esac
             echo "Ainda precisa de ajuda? Talvez algumas horas na biblioteca resolvam..."
             perguntar_continuar
             ;;
         0)
+            echo "~*"            
             echo "Saindo..."
             echo "Lembre-se: é leviÔsa e não leviosÁ..."
             exit 0
